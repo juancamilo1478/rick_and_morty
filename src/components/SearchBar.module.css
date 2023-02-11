@@ -1,0 +1,45 @@
+.barra{
+  height: 100%;
+  background: rgba(34, 50, 141, 0.46);
+  margin-bottom: 20px;
+}
+.botton{
+    
+    border-radius: 20px;
+    
+    border: transparent;
+    background:rgb(31, 189, 201);
+    color:white;
+    transition: 1s;
+    
+}
+
+.botton:hover{
+    background: rgb(59, 189, 59);
+}
+.imagen{
+    width: 30px;
+    
+}
+.contenido{
+    text-align: center;
+    background: rgba(63, 214, 153, 0.46);
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: flexbox;
+    
+    
+}
+.todo{
+    
+    background: white;
+    width: 300px;
+    background:  rgba(34, 50, 141, 0.8);
+    border-radius: 20px;
+    border: solid black;
+    margin: auto;
+    
+}

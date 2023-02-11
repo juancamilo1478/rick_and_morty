@@ -1,0 +1,73 @@
+.contenedor{
+   
+   padding: 20px;
+   border: transparent;
+   width: 200px;
+   border-radius: 30px;
+   box-shadow: 10px 5px 5px black;  
+   transition: 0.5s;
+   font-size: 0.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px;
+}
+.x{
+border: transparent;
+position: absolute;
+border-radius: 50px;
+background: green;
+transition: 1s;
+font-size: 1rem;
+}
+.x:hover{
+    background: red;
+}
+
+.imagen{  
+    width: 100%;
+ 
+}
+.boton1{
+    color: white;
+    margin: 10px;
+    text-align: center;
+    background:rgb(223, 81, 16) ;
+    padding: 0.2px;
+    border-radius: 50px;
+    box-shadow:5px 5px 5px black;
+    width: 200px;
+    transition: 1s;
+}
+
+.boton2{
+    color: white;
+    margin: 10px;
+    text-align: center;
+    background:rgb(119, 25, 91) ;
+    padding: 0.2px;
+    border-radius: 50px;
+    box-shadow:5px 5px 5px black;
+    width: 200px;
+    transition: 1s;
+}
+.boton3{
+    color: white;
+    margin: 10px;
+    text-align: center;
+    background:rgb(11, 236, 11) ;
+    padding: 0.2px;
+    border-radius: 50px;
+    box-shadow:5px 5px 5px black;
+    width: 200px;
+    transition: 1s;
+}
+
+
+.texto{
+    text-align: left;
+}
+.boton1:hover,.boton2:hover,.boton3:hover{
+    background: gold;
+}
+
+

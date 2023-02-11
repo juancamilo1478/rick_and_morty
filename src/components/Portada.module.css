@@ -1,0 +1,53 @@
+
+.foto{
+    width: 100vmax;  
+    filter: brightness(50%);
+    position: absolute;
+    z-index: -1;
+}
+.letras{
+    width: 60%;
+    color: white;
+    z-index: 1;
+    margin: 0 auto ;
+    
+}
+
+.contenido{
+    max-width: 800px;
+    
+    margin: 200px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.botton{
+    
+
+    border-radius: 20px;
+    text-align: center;
+    width: 20%;
+}
+
+.color{
+    
+    background-color: blue;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0.1rem;
+    margin: 80px;
+    
+}
+
+@media screen and (max-width: 1000px){
+    .contenido{
+        width: 100%;
+        max-width: 500px;
+        flex-direction: column;
+    }
+    .foto{
+        height: calc(150vmax);
+    }
+  }
