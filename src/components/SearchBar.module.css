@@ -1,45 +1,42 @@
 .barra{
-  height: 100%;
-  background: rgba(34, 50, 141, 0.46);
-  margin-bottom: 20px;
-}
-.botton{
     
-    border-radius: 20px;
-    
-    border: transparent;
-    background:rgb(31, 189, 201);
-    color:white;
-    transition: 1s;
-    
-}
+  outline: none;
+  color: white;
+  height: 20px;
+  background: transparent;
+  border: transparent;
 
-.botton:hover{
-    background: rgb(59, 189, 59);
-}
-.imagen{
-    width: 30px;
-    
 }
 .contenido{
     text-align: center;
-    background: rgba(63, 214, 153, 0.46);
-    padding: 10px;
+    background: rgba(25, 78, 148, 0.205);
+    padding: 15px;
     position: fixed;
     z-index: 1000;
     top: 0;
     width: 100%;
     display: flexbox;
     
-    
 }
 .todo{
-    
+   
     background: white;
     width: 300px;
     background:  rgba(34, 50, 141, 0.8);
     border-radius: 20px;
-    border: solid black;
     margin: auto;
+    box-shadow: 10px 5px 5px black;  
+    padding: 5px;
+   
+
+}
+.mas{
+    right: 0px;
+    color: white;
+    font-size: 1rem;
+    background: red;
+    border: transparent;
+    border-radius: 100%;
+    box-shadow:  3px 2px 2px black; 
     
 }

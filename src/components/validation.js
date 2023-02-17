@@ -6,16 +6,16 @@ const validation = (user)=>{
 
     const errors = {};
     if (user.username==='') {
-        errors.username= 'Mi brow sea serio, LLENA ESA VAINAAAA'; 
+        errors.username= 'Espacio vacío'; 
     }
     if (user.username.length>35) {
-        errors.username= 'Cambie de correo mane, eso parece un mensaje'; 
+        errors.username= 'Correo muy grande'; 
     }
     if (!regUser.test(user.username)) {
-        errors.username= 'Mi brow sea serio, aqui va un correo marikonnn';
+        errors.username= 'No es un correo';
     }
     if (!regPass.test(user.password)) {
-        errors.password= 'Mi brow con esa contraseña te roba hasta mi tia';
+        errors.password= 'Necesita almenos 1# y 6-10 caracteres';
     }
 
     return errors;

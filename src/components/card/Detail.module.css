@@ -1,0 +1,119 @@
+.contenedor{
+ 
+    max-width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(32, 27, 27, 0.425);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow:5px 5px 5px black;
+
+    animation-name:ingresar ;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+.texto{
+width: 60%;
+color: chartreuse;
+font-size: 0.8rem;
+}
+.letras{
+    text-shadow:2px 2px 2px black ;
+}
+
+.imagen{
+    width: 30%;
+    
+}
+
+.figura{
+    border-radius: 30px;
+    
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.portal{
+    width: 50px;
+    height: 50px;
+    animation-name: portal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+.circulo{
+    position: relative;
+    top: 0px; left: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(136, 255, 0, 0.705);
+    z-index: 2;
+    animation-name: luz;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.botton{
+    background: rgba(13, 56, 151, 0.904);
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-align: left;
+    padding: 2px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
+    transition: 1s;
+    color: darkgoldenrod;
+}
+
+.botton:hover{
+    background: rgba(202, 30, 30, 0.904);
+    color: white;
+}
+.lin{
+    text-decoration: none;
+   
+}
+
+@keyframes portal {
+    0%{
+        transform: rotate(0deg) scale(1);
+
+    }
+    100%{
+        transform: rotate(45deg) scale(1.2);
+       
+    }
+}
+@keyframes luz {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(1rem);
+       
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.5);
+        filter: blur(2rem);
+    }
+}
+@keyframes ingresar {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1; 
+    }   
+}

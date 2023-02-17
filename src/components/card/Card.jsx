@@ -14,7 +14,7 @@ const borrarElemento=()=>{
          <img className={estilo.imagen} src={props.image} alt="" /> 
          <div className={estilo.texto}>
             
-         <Link to={`/detail/${props.id}`} >
+         <Link to={`/detail/${props.id}`} className={estilo.lin}>
          <div className={estilo.boton1}>
          <h2> {props.name}</h2>
          </div>

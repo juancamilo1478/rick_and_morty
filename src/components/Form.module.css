@@ -1,0 +1,96 @@
+.foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.contenido{
+
+    position: relative;
+    text-align: left;
+    max-width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 2rem;
+    z-index: 2;
+    text-shadow: 3px 3px 3px black;
+
+
+    animation-name:ingresar ;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.fondol{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 10px 5px 5px black;  
+}
+
+.alerta{
+    margin-left: 30px;
+    font-size: 70%;
+    color: red;
+   text-shadow: 2px 2px 3px black;  
+}
+.salir{
+ 
+    width: 100px;
+    font-size: 2rem;
+    background: red;
+    border: transparent;
+    display: flex;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 3px 5px 5px black; 
+    text-shadow: 3px 5px 5px rgb(17, 56, 63); 
+    background: rgb(221, 93, 19);
+    color: white;
+    text-align: center;
+    
+}
+.lin{
+    text-decoration: none;
+   
+}
+
+
+.buscador{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.contenidoI{
+    margin-left: 15px;
+    width: 400px;
+    border-radius: 20px;
+    background: rgba(51, 79, 170, 0.63);
+    padding: 2px;
+    color: white;
+}
+
+.login{
+position: absolute;
+font-size: 1.2rem;
+background: rgb(45, 208, 230);
+width: 100px;
+border: transparent;
+border-radius: 20px;
+right: 0;
+color: white;
+box-shadow: 3px 5px 5px black;  
+}
+@keyframes ingresar {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1; 
+    }   
+}
