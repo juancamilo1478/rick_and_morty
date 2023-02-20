@@ -1,14 +1,36 @@
-import Card from './Card';
-import estilo from './Cards.module.css'
-import fotos from "../../img/portada.jpg"
+//component card ,show the cards
+import Card from "./Card";
+import React, { useEffect } from "react";
+//style css
+import estilo from "./Cards.module.css";
+import fotos from "../../img/portada.jpg";
+//bookstores react-react-redux
 
-export default function Cards(props) {
-   const { characters } = props;
+import { useSelector } from "react-redux";
+//accion todas las cartas
 
-   return <div className={estilo.contenedor}>
-      <img src={fotos} alt="foto" className={estilo.foto}/>
+export default function Cards() {
+  const cartass = useSelector((state) => state.allcards);
+
+  return (
+    <div className={estilo.contenedor}>
+      <img src={fotos} alt="foto" className={estilo.foto} />
       <div className={estilo.contenedorcar}>
-         {characters.map((data)=>{
-      return<Card  name={data.name} gender={data.gender} species={data.species} image={data.image} borrar={props.borrar} id={data.id} />
-   })}</div></div>;
+        {cartass.results &&
+          cartass?.results?.map((data, index) => {
+            return (
+              <Card
+                name={data.name}
+                gender={data.gender}
+                species={data.species}
+                image={data.image}
+                id={data.id}
+                key={index}
+              />
+            );
+          })}
+      </div>
+    </div>
+  );
 }
+//

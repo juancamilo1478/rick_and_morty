@@ -1,74 +1,74 @@
 .contenedor{
-   
     animation-name:ingresar ;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-  
-
-
    padding: 20px;
    border: transparent;
-   width: 200px;
+   width: 180px;
    border-radius: 30px;
    box-shadow: 1px 10px 10px 12px black;  
-
    transition: 0.5s;
    font-size: 0.5rem;
    display: flex;
    flex-wrap: wrap;
    margin: 20px;
-    
+   background: rgba(248, 247, 247, 0.226);
 }
 .x{
 border: transparent;
-position: absolute;
 border-radius: 50px;
-background: green;
+background: rgb(175, 18, 18);
 transition: 1s;
 font-size: 1rem;
+box-shadow: 5px 5px 5px black;
+color: white;
+
+
 }
 .x:hover{
-    background: red;
+    background: rgb(58, 221, 233);
 }
 
 .imagen{  
     width: 100%;
- 
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(8, 255, 8, 0.986);
+}
+.contenedorbotton{
+    margin-top: 10px;
+    width: 100%;
 }
 .boton1{
-    color: white;
-    margin: 10px;
+    width: 80%;
+    height: 30px;
     text-align: center;
-    background:rgb(223, 81, 16) ;
-    padding: 0.2px;
+    background:rgb(40, 53, 131) ;
     border-radius: 50px;
-    box-shadow:5px 5px 5px black;
-    width: 200px;
+    box-shadow:5px 5px 5px rgb(5, 5, 5);
     transition: 1s;
+    margin: auto;
 }
 
 .boton2{
-    color: white;
-    margin: 10px;
-    text-align: center;
-    background:rgb(119, 25, 91) ;
-    padding: 0.2px;
-    border-radius: 50px;
-    box-shadow:5px 5px 5px black;
-    width: 200px;
-    transition: 1s;
+    width: 80%;
+        height: 30px;
+        text-align: center;
+        background: rgb(16, 153, 89);
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px rgb(5, 5, 5);
+        transition: 1s;
+        margin: auto;
 }
 .boton3{
-    color: white;
-    margin: 10px;
-    text-align: center;
-    background:rgb(11, 236, 11) ;
-    padding: 0.2px;
-    border-radius: 50px;
-    box-shadow:5px 5px 5px black;
-    width: 200px;
-    transition: 1s;
+    width: 80%;
+        height: 30px;
+        text-align: center;
+        background: rgb(214, 27, 27);
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px rgb(5, 5, 5);
+        transition: 1s;
+        margin: auto;
 }
 
 .lin{
@@ -76,11 +76,23 @@ font-size: 1rem;
    
 }
 
+.favorite{
+    width: 40px;
+    right: 100% ;
+    margin: 0% 60%;
+}
+.opcions{
 
+width: 100%;
+display: flex;
 
+}
 
 .texto{
-    text-align: left;
+position: relative;
+    top: 6px;
+    color:  rgb(245, 237, 237);
+    text-shadow: 2px 2px 2px rgb(8, 8, 8);
 }
 .boton1:hover,.boton2:hover,.boton3:hover{
     background: gold;

@@ -1,0 +1,30 @@
+.contenido{
+    background: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.drive{
+    margin-left: 20px auto;
+    width: 20%;
+    margin:  auto;
+}
+.filters{
+width: 30%;
+margin: auto;
+display: inline-flex;
+
+}
+.favorites{
+    width: 30%;
+}
+.image{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+}
