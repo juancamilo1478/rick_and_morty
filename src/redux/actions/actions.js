@@ -8,6 +8,8 @@ export const DELETE_FAVORITE="DELETE_FAVORITO";
 export const LINCK="LINCK";
 //detail card
 export const DETAIL="DETAIL";
+// filter
+export const FILTERS="FILTERS";
 export const allcards=()=>{
     return  function(dispatch){
         fetch (`https://rickandmortyapi.com/api/character/`)
@@ -42,7 +44,9 @@ export const addfavorito=(elemento)=>{
          .then(data => dispatch({type:ADD_FAVORITE, payload:data}))
          }
 }
-
+export const filters=(filtered)=>{
+    return{type:FILTERS,payload:filtered}
+}
 
 
 

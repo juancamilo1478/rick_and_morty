@@ -5,6 +5,7 @@ import volar from "../img/animation.png";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { allcards } from "../redux/actions/actions";
+
 function Portada() {
   const dispatch = useDispatch();
   useEffect(() => {

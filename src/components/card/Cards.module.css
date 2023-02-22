@@ -6,21 +6,15 @@
     z-index: -1;   
  
 }
-.contenedor{ 
-    position: relative;
-    width: 100%;
-    height: 100%;
-   min-height: 100dvh;   
-   margin: 0 auto;
- 
-}
-.contenedorcar{
-    width: 80%;
-    margin:0 auto;
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap; 
 
+.contenedorcar{ 
+    min-width: 550px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 60px;
 
 }
 
@@ -37,5 +31,22 @@
     100%{
         transform: translateY(90%);
       
+    }
+}
+
+
+@media screen and (max-width: 870px) {
+    .contenedorcar {
+        width: 70%;   
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contenedorcar {
+        flex-direction: column;
+        width: 40%;
+        min-width: 0px;
+        margin: 50px auto;
+
     }
 }

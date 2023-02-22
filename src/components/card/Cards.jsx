@@ -1,6 +1,5 @@
 //component card ,show the cards
 import Card from "./Card";
-import React, { useEffect } from "react";
 //style css
 import estilo from "./Cards.module.css";
 import fotos from "../../img/portada.jpg";
@@ -16,8 +15,8 @@ export default function Cards() {
     <div className={estilo.contenedor}>
       <img src={fotos} alt="foto" className={estilo.foto} />
       <div className={estilo.contenedorcar}>
-        {cartass.results &&
-          cartass?.results?.map((data, index) => {
+        {cartass &&
+          cartass?.map((data, index) => {
             return (
               <Card
                 name={data.name}

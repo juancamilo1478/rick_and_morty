@@ -12,13 +12,12 @@ export default function Card(props) {
   const dispatch = useDispatch();
   // traer datos de favoritos para mirarlos con useEfect
   const favoritos = useSelector((state) => state.favorite);
-  const cartass = useSelector((state) => state.allcards);
+  const cartas = useSelector((state) => state.allcards);
   const [favorite, setFavorite] = useState(false);
   //use effect mirar favoritos
   useEffect(() => {
     mirar();
-    return () => {};
-  }, [cartass, favoritos]);
+  }, [favoritos, cartas]);
 
   const mirar = () => {
     let auxiliar = false;
@@ -43,7 +42,6 @@ export default function Card(props) {
   return (
     <div className={estilo.contenedor}>
       <div className={estilo.opcions}>
-        <button className={estilo.x}>X</button>
         {favorite ? (
           <img
             src={favorito}

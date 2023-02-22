@@ -3,28 +3,69 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    display: flex;
     height: 100px;
     width: 100%;
-    text-align: center;
     color: white;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 30% ;
 }
-.drive{
-    margin-left: 20px auto;
-    width: 20%;
-    margin:  auto;
+.nextc{
+    margin: 40px auto;
 }
-.filters{
-width: 30%;
-margin: auto;
-display: inline-flex;
+.filtro{
+display: flex;
+color: greenyellow;
+}
+.filterselect{
+    height: 50%;
+    margin: 50px auto; 
+    background: greenyellow;
 
 }
-.favorites{
-    width: 30%;
-}
-.image{
-    width: 100px;
-    height: 40px;
+.home{
     margin: auto;
+    color: greenyellow;
+    transition: 1s;
+}
+.home:hover{
+    color: aquamarine;
+}
+
+
+.namefilter{
+    position: relative;
+    margin: 50px auto;
+}
+.lin {
+    text-decoration: none;
+    color: greenyellow;
+    transition: 1s;
+    
+}
+.lin:hover{
+    color:red;
+}
+.buttonleft{
+    background: greenyellow ;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: transparent;
+    margin-right: 5px;
+    transition: 1s;
+
+}
+.buttonleft:hover{
+    cursor: pointer;
+    background: red;
+}
+.buttonright{
+    background: greenyellow;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: transparent;
+    transition: 1s;
+}
+.buttonright:hover{
+    cursor: pointer;
+    background: red;
 }

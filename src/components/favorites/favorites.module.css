@@ -1,0 +1,32 @@
+.favoritos{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+
+}
+
+@media screen and (max-width: 870px) {
+    .favoritos {
+        width: 70%;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .favoritos {
+        flex-direction: column;
+        width: 40%;
+        min-width: 0px;
+        margin: 50px auto;
+
+    }
+}

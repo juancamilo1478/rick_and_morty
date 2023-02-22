@@ -12,22 +12,11 @@
    font-size: 0.5rem;
    display: flex;
    flex-wrap: wrap;
-   margin: 20px;
+
    background: rgba(248, 247, 247, 0.226);
 }
-.x{
-border: transparent;
-border-radius: 50px;
-background: rgb(175, 18, 18);
-transition: 1s;
-font-size: 1rem;
-box-shadow: 5px 5px 5px black;
-color: white;
-
-
-}
-.x:hover{
-    background: rgb(58, 221, 233);
+.contenedor:hover{
+    background: rgba(248, 247, 247, 0.507);
 }
 
 .imagen{  
@@ -79,7 +68,7 @@ color: white;
 .favorite{
     width: 40px;
     right: 100% ;
-    margin: 0% 60%;
+    margin: -12px 85%;
 }
 .opcions{
 

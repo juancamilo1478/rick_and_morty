@@ -6,6 +6,8 @@ import { useState,useEffect } from 'react'
 import { Routes,Route ,useLocation,useNavigate} from 'react-router-dom'
 import Detail from './components/card/Detail'
 import Form from './components/Form'
+import Favorites from './components/favorites/favorites'
+
 function App () {
 const lugar=useLocation()
 const navigate = useNavigate();
@@ -39,9 +41,10 @@ if(lugar.pathname==='/' || lugar.pathname==='/home')
    
       <SearchBar />   
       <Routes>
-      <Route path='/home' element={<Portada/>}/>
+      <Route path='/home' element={<Portada />}/>
       <Route path='/cartas' element={<Cards />} />  
       <Route path='/detail/:detailId'  element={<Detail/>}/>
+      <Route path='/favorites' element={<Favorites/>} />
       </Routes> </ div >)
 }}
 
