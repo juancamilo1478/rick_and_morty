@@ -15,9 +15,6 @@ export default function Card(props) {
   const cartas = useSelector((state) => state.allcards);
   const [favorite, setFavorite] = useState(false);
   //use effect mirar favoritos
-  useEffect(() => {
-    mirar();
-  }, [favoritos, cartas]);
 
   const mirar = () => {
     let auxiliar = false;
@@ -30,6 +27,12 @@ export default function Card(props) {
     }
     setFavorite(auxiliar);
   };
+  useEffect(() => {
+    mirar();
+    return () => {
+      mirar();
+    };
+  }, [favoritos, cartas]);
 
   const addFavorite = () => {
     if (favorite === false) {
