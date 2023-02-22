@@ -23,9 +23,9 @@ function login(userData) {
    }
 }
 
-useEffect(() => {
-   !access && navigate('/');
-}, [access]);
+// useEffect(() => {
+//    !access && navigate('/');
+// }, [access]);
 
 if(lugar.pathname==='/' || lugar.pathname==='/home')
 {
